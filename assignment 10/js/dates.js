@@ -21,3 +21,10 @@ else
 //STEP 4
 
 //STEP 5
+let myDate = new Date();
+let dayIndex = myDate.getDay(); // Get the day index (0-6)
+let dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let dayName = dayNames[dayIndex]; // Get the day name from the array
+let firstCharacter = dayName.charAt(0); // Get the first character
+
+console.log(firstCharacter);
