@@ -19,6 +19,18 @@ else
 }
 
 //STEP 4
+let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+let currentDate = new Date();
+let currentDayIndex = currentDate.getDay(); // Get today's day index (0-6)
+let yesterdayDayIndex = (currentDayIndex - 1 + 7) % 7; // Calculate yesterday's day index
+
+let yesterdayDay = daysOfWeek[yesterdayDayIndex];
+
+console.log("Yesterday's day of the week was:", yesterdayDay);
+
+
+
 
 //STEP 5
 let myDate = new Date();
