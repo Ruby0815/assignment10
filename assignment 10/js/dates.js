@@ -1,10 +1,20 @@
 //STEP 1
-let d=new Date();
-  let d1=   d.getDay();
-  console.log(d1)
+let currentMonth = new Date().getMonth();
+
+function myFun(myMonth){
+    const myDays = [31,28,30,31,30,31,30,31,30,31,30,31];
+ return myDays[myMonth];
+}
+
+
+let result = myFun(currentMonth);
+console.log(`There are ${result} days in this month`);
+
+
 //STEP 2
-let m1=d.getMonth();
-console.log(m1)
+// let m1=d.getMonth();
+// console.log(m1)
+
 //STEP 3
 let d3=new Date();
     console.log(d3)
@@ -28,8 +38,6 @@ let yesterdayDayIndex = (currentDayIndex - 1 + 7) % 7; // Calculate yesterday's 
 let yesterdayDay = daysOfWeek[yesterdayDayIndex];
 
 console.log("Yesterday's day of the week was:", yesterdayDay);
-
-
 
 
 //STEP 5
